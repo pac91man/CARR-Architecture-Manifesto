@@ -48,6 +48,7 @@ Organizare Clară și Logică
 
 Structura sistemului este inspirată de o "casă vagon", unde fiecare folder principal are o funcție clară:
 
+```
 /CARR
 ├── /core                   # Componente esențiale ale sistemului de operare
 │   ├── /kernel             # Kernel-ul în sine (Linux, microkernel, etc.)
@@ -88,6 +89,7 @@ Structura sistemului este inspirată de o "casă vagon", unde fiecare folder pri
 ├── /security               # Chei GPG, reguli firewall, SELinux/AppArmor
 ├── /virtualization         # Mașini virtuale și containere (QEMU, Docker, etc.)
 ├── /docs                   # Manuale, tutoriale, README-uri, PDF-uri tehnice
+```
 
 🌐 Compatibilitate cu Tehnologii Moderne
 
