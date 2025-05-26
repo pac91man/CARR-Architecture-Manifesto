@@ -1,7 +1,7 @@
 # Manifestul Arhitecturii CARR
 ## *Compartmentalized Architecture for Resources and Repositories*
 
-Copyright (c) 2025 Munteanu Vasile-Alexandru. 
+Copyright (c) 2025 Vasile-Alexandru Munteanu.
 Acest Manifest este licențiat sub Creative Commons Attribution 4.0 International License (CC BY 4.0). 
 Pentru a vizualiza o copie a acestei licențe, vizitați: https://creativecommons.org/licenses/by/4.0/
 
