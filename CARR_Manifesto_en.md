@@ -24,6 +24,7 @@ Current Linux systems generally use the Filesystem Hierarchy Standard (FHS), whi
     Updating a library affects all applications that use it
 
 CARR proposes a different approach based on isolation and modularity, which can offer certain advantages in specific scenarios.
+
 Concrete Benefits for Users
 Key Features of CARR
 For General Users:
