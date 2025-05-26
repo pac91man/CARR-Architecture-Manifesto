@@ -82,8 +82,8 @@ The system's structure is inspired by a "railroad car-style house," where each m
 ├── /data                   # Application cache, local databases, sessions
 │
 ├── /rollback               # Temporary storage for system rollback, created during major operating system updates/upgrades.
-│   * Previous versions of critical files
-│   * Useful for reverting after failed updates/upgrades
+│                           * Previous versions of critical files
+│                           * Useful for reverting after failed updates/upgrades
 │
 ├── /tmp                    # Temporary files (deleted on boot)
 ├── /logs                   # System logs (syslog, journalctl, etc.)
