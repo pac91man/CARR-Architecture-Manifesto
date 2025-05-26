@@ -8,10 +8,12 @@ To view a copy of this license, visit: https://creativecommons.org/licenses/by/4
 
 Executive Summary
 
-CARR represents an alternative approach to organizing Linux systems, based on principles of modularity, isolation, and intuitiveness. By compartmentalizing system resources, CARR offers a structure that can reduce package conflicts, enhance security, and facilitate the simultaneous execution of multiple Linux ecosystems.
+CARR represents an alternative approach to organizing Linux systems, based on principles of modularity, isolation, and intuitiveness.
+By compartmentalizing system resources, CARR offers a structure that can reduce package conflicts, enhance security, and facilitate the simultaneous execution of multiple Linux ecosystems.
 Introduction
 
-The CARR (Compartmentalized Architecture for Resources and Repositories) architecture proposes an alternative approach to managing resources and packages within a Linux operating system. Inspired by concepts such as a railroad car-style house, an organized construction site, and an overhead crane that moves resources where needed, CARR provides a clear structure for Linux systems.
+The CARR (Compartmentalized Architecture for Resources and Repositories) architecture proposes an alternative approach to managing resources and packages within a Linux operating system.
+Inspired by concepts such as a railroad car-style house, an organized construction site, and an overhead crane that moves resources where needed, CARR provides a clear structure for Linux systems.
 Comparison with Current Organization
 
 Current Linux systems generally use the Filesystem Hierarchy Standard (FHS), which has the following characteristics:
