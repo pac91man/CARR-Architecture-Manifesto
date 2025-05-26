@@ -106,25 +106,39 @@ By clearly separating components and using a strict isolation and permission mec
 Easy Update and Maintenance
 
 The system enables simple updates and maintenance, where packages can be updated or replaced without affecting other critical components due to folder compartmentalization.
-The Linking Mechanism: How CARR Works
-FolderBridge - The System's "Brain"
+## The Linking Mechanism: How CARR Works
 
-FolderBridge is the central mechanism for controlled linking between the compartmentalized spaces of the CARR system, allowing data transfer or temporary access between isolated folders, with clear security and filtering policies.
+### FolderBridge - The System's Orchestrator
 
-Main functions:
+**FolderBridge** is the central mechanism for controlled linking and resource management within the CARR system. It acts as the system's "brain," orchestrating interactions between compartmentalized spaces and ensuring data transfer or temporary access between isolated folders, all while upholding clear security and filtering policies without compromising the logical and physical separation of components.
 
-    Basic system control: Managing system startup, shutdown, and restart
-    Application installation: A unified package manager that registers applications in their own compartment
-    Smart update/upgrade: Separate updates for the operating system and applications, with conflict detection between versions
-    Resource management: Monitors and optimizes CPU, RAM, and storage usage
-    Universal compatibility: Integration with systemd/init and other standard Linux systems
+Its primary functions include:
 
-System_Control - The System's "Arms"
+* **Core System Control:** Managing system startup, shutdown, and restart processes. FolderBridge oversees boot phases and coordinates system-level operations. It aims to provide a unified control layer that could integrate with or eventually supersede existing init systems like systemd or init.d.
+* **Application Management:** Providing a unified package manager (conceptual, e.g., 'kpm') that accepts user commands for application installation. This manager ensures applications are registered within their designated compartments (e.g., `/CARR/apps/firefox/`) following strict rules: applications **must not** directly modify core OS files. It also handles compatibility checks and signature verification.
+* **Intelligent Update & Upgrade:** Facilitating separate update processes for the core operating system and individual applications. This allows for updating the system kernel without affecting installed applications, and vice-versa. It includes robust conflict detection between versions without jeopardizing overall system stability.
+* **Active Application Runtime Management:** Overseeing the simultaneous execution of applications from various ecosystems without conflicts or performance degradation. FolderBridge manages the isolation of each application within its "wagon" (a soft or logical container), monitors per-application resource usage (RAM/CPU), and can optionally prioritize applications based on user demand.
 
-System_control modules are specialized extensions of FolderBridge, each with a specific function in efficient resource management. These modules act in coordination to ensure the harmonious functioning of the entire system.
-Scripts - The System's "Cables"
+### System_Control - The System's Arms
+
+**System_Control** modules are specialized extensions of FolderBridge. Each module performs a specific function in efficient resource management (e.g., handling kernel, bootloader, drivers, etc.). These modules work in coordination with FolderBridge to ensure the harmonious functioning of the entire system.
+
+### Scripts - The System's Cables
 
 External scripts handle special tasks, bringing flexibility and automation to system management, similar to a crane's scripts that facilitate the movement of resources where needed.
+
+---
+
+### Additional Ideas for CARR (Optional Section)
+
+To further enhance CARR's capabilities, additional modules could include:
+
+* **Plugin Management:** Support for extensions or custom scripts.
+* **Security Sandbox Control:** Ensuring applications run without direct access to core OS files.
+* **Backup & Snapshot Management:** Providing dedicated backup and snapshot capabilities for each compartment (e.g., for `/apps`, `/core`, `/config`).
+* **System Monitoring:** Real-time display of system status and performance.
+* **System Profiles:** Allowing easy switching between predefined system configurations (e.g., Server Mode, Gaming Mode).
+
 Illustrative Scenarios
 Scenario 1: Multi-distribution Use
 
