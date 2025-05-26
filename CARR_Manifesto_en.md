@@ -124,7 +124,7 @@ System_Control - The System's "Arms"
 System_control modules are specialized extensions of FolderBridge, each with a specific function in efficient resource management. These modules act in coordination to ensure the harmonious functioning of the entire system.
 Scripts - The System's "Cables"
 
-External scripts (scriptele) handle special tasks, bringing flexibility and automation to system management, similar to a crane's scripts that facilitate the movement of resources where needed.
+External scripts handle special tasks, bringing flexibility and automation to system management, similar to a crane's scripts that facilitate the movement of resources where needed.
 Illustrative Scenarios
 Scenario 1: Multi-distribution Use
 
