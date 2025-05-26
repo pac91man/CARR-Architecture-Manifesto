@@ -46,6 +46,7 @@ Clear and Logical Organization
 
 The system's structure is inspired by a "railroad car-style house," where each main folder has a clear function:
 
+```
 /CARR
 ├── /core                   # Essential operating system components
 │   ├── /kernel             # The kernel itself (Linux, microkernel, etc.)
@@ -86,6 +87,7 @@ The system's structure is inspired by a "railroad car-style house," where each m
 ├── /security               # GPG keys, firewall rules, SELinux/AppArmor
 ├── /virtualization         # Virtual machines and containers (QEMU, Docker, etc.)
 ├── /docs                   # Manuals, tutorials, READMEs, technical PDFs
+```
 
 Compatibility with Modern Technologies
 
