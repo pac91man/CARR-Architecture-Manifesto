@@ -173,4 +173,9 @@ Similar analogiei dintre roțile vechilor căruțe și roțile moderne ale mași
 
 Arhitectura CARR oferă o perspectivă alternativă pentru organizarea sistemelor Linux, cu un accent pe modularitate și izolare. Prin utilizarea unor principii clare de compartimentare, această arhitectură ar putea adresa unele provocări actuale și deschide noi oportunități pentru evoluția ecosistemului Linux.
 
-Prin prezentarea acestei viziuni, invităm comunitatea Linux să exploreze conceptele CARR și să evalueze potențialele beneficii în contextul nevoilor actuale și viitoare ale utilizatorilor și dezvoltatorilor.
+Prin prezentarea acestei viziuni, invit comunitatea Linux să exploreze conceptele CARR și să evalueze potențialele beneficii în contextul nevoilor actuale și viitoare ale utilizatorilor și dezvoltatorilor.
+
+Am pus bazele viziunii CARR, o arhitectură care cred că rezolvă probleme fundamentale ale organizării sistemelor Linux.
+
+Totusi eu fiind un vizionar, nu un expert în software, fac un apel către comunitatea Linux: haideți să construim împreună implementarea tehnică a CARR !
+Sunt deschis la cele mai simple și eficiente soluții (principiu KISS) care pot face din CARR o alternativă viabilă pentru viitoarele distribuții Linux.
