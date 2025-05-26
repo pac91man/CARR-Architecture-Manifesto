@@ -105,25 +105,39 @@ Prin separarea clară a componentelor și utilizarea unui mecanism strict de izo
 🔄 Actualizare și Mentenanță Ușoară
 
 Sistemul permite actualizări și mentenanță simple, unde pachetele pot fi actualizate sau înlocuite fără a afecta alte componente critice, datorită compartimentării folderelor.
-🧠 Mecanismul de Legătură: Cum Funcționează CARR
-FolderBridge - "Creierul" Sistemului
+---
+## 🧠 Mecanismul de Legătură: Cum Funcționează CARR
 
-FolderBridge este mecanismul central pentru legătura controlată între spațiile compartimentate ale sistemului CARR, permițând transferul de date sau accesul temporar între folderele izolate, cu politici clare de securitate și filtrare.
+### FolderBridge - Orchestratorul Sistemului
 
-Funcții principale:
+**FolderBridge** este mecanismul central pentru legătura controlată și gestionarea resurselor în cadrul sistemului CARR. Acționează ca "creierul" sistemului, orchestrând interacțiunile dintre spațiile compartimentate și asigurând transferul de date sau accesul temporar între folderele izolate, respectând în același timp politici clare de securitate și filtrare, fără a compromite separarea logică și fizică a componentelor.
 
-    Controlul de bază al sistemului: Gestionarea pornirii, opririi și repornirii sistemului.
-    Instalarea aplicațiilor: Un manager de pachete unificat care înregistrează aplicațiile în propriul lor compartiment.
-    Actualizare/Upgrade inteligent: Actualizări separate pentru sistemul de operare și aplicații, cu detecția conflictelor între versiuni.
-    Gestionarea resurselor: Monitorizează și optimizează utilizarea CPU, RAM și stocare.
-    Compatibilitate universală: Integrare cu systemd/init și alte sisteme standard Linux.
+Funcțiile sale principale includ:
 
-System_Control - "Brațele" Sistemului
+* **Controlul de Bază al Sistemului:** Gestionarea proceselor de pornire, oprire și repornire a sistemului. FolderBridge supraveghează fazele de boot și coordonează operațiunile la nivel de sistem. Rolul său este de a oferi un strat de control unificat, ce ar putea integra sau, în cele din urmă, înlocui sistemele `init` existente, precum systemd sau init.d.
+* **Gestionarea Aplicațiilor:** Furnizarea unui manager de pachete unificat (conceptual, de exemplu, 'kpm') care acceptă comenzi de la utilizator pentru instalarea aplicațiilor. Acest manager se asigură că aplicațiile sunt înregistrate în compartimentele lor desemnate (ex: `/CARR/apps/firefox/`), respectând reguli stricte: aplicațiile **nu trebuie** să modifice direct fișierele de bază ale sistemului de operare. De asemenea, gestionează verificările de compatibilitate și autentificarea semnăturilor.
+* **Actualizări & Upgrade-uri Inteligente:** Facilitarea proceselor separate de actualizare pentru sistemul de operare și pentru aplicațiile individuale. Aceasta permite actualizarea nucleului sistemului fără a afecta aplicațiile instalate, și vice-versa. Include o detecție robustă a conflictelor între versiuni, fără a periclita stabilitatea generală a sistemului.
+* **Gestionarea Rulării Aplicațiilor Active:** Supravegherea execuției simultane a aplicațiilor din diverse ecosisteme, fără conflicte sau degradarea performanței. FolderBridge gestionează izolarea fiecărei aplicații în "vagonul" său (un container software sau logic), monitorizează utilizarea resurselor (RAM/CPU) per aplicație și poate, opțional, prioritiza aplicațiile în funcție de cerințele utilizatorului.
 
-Modulele System_control sunt extensii specializate ale FolderBridge, fiecare cu o funcție specifică în gestionarea eficientă a resurselor. Aceste module acționează în coordonare pentru a asigura funcționarea armonioasă a întregului sistem.
-Scripts - "Cablurile" Sistemului
+### System_Control - "Brațele" Sistemului
+
+**Modulele System_Control** sunt extensii specializate ale FolderBridge. Fiecare modul îndeplinește o funcție specifică în gestionarea eficientă a resurselor (ex: gestionarea kernel-ului, bootloader-ului, driverelor etc.). Aceste module lucrează în coordonare cu FolderBridge pentru a asigura funcționarea armonioasă a întregului sistem.
+
+### Scripts - "Cablurile" Sistemului
 
 Scripturile externe gestionează sarcini speciale, aducând flexibilitate și automatizare managementului sistemului, similar cu scripturile unei macarale ce facilitează mutarea resurselor acolo unde este nevoie.
+
+---
+
+### Idei Suplimentare pentru CARR (Secțiune Opțională)
+
+Pentru a îmbunătăți și mai mult capabilitățile CARR, module suplimentare ar putea include:
+
+* **Gestionarea Plugin-urilor:** Suport pentru extensii sau scripturi personalizate.
+* **Controlul Sandbox-ului de Securitate:** Asigurarea că aplicațiile rulează fără acces direct la fișierele de bază ale sistemului de operare.
+* **Gestionarea Backup & Snapshot:** Oferirea de capabilități dedicate de backup și snapshot pentru fiecare compartiment (ex: pentru `/apps`, `/core`, `/config`).
+* **Monitorizarea Sistemului:** Afișarea în timp real a stării și performanței sistemului.
+* **Profiluri de Sistem:** Permiterea comutării ușoare între configurații predefinite ale sistemului (ex: Mod Server, Mod Gaming).
 
 📝 Scenarii Ilustrative
 Scenariul 1: Utilizare Multi-distribuție
