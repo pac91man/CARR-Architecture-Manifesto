@@ -167,8 +167,8 @@ Native Adoption Stage:
     Development of tools and libraries specifically optimized for this architecture
     Rewriting critical components to fully exploit the advantages of the compartmentalized structure
 
-Similar to the analogy of old cartwheels versus modern car wheels, applications running in compatibility mode will not fully exploit CARR's benefits. However, once rewritten for the native architecture, applications will be able to leverage all the advantages of the modern and optimized structure that CARR offers.
-Conclusion
+Similar to the analogy of old cartwheels versus modern car wheels – **just as 19th-century cartwheels can be adapted to present-day automobiles but will limit the cars' speed and performance** – applications running in compatibility mode will not fully exploit CARR's benefits.
+However, once rewritten for the native architecture, applications will be able to leverage all the advantages of the modern and optimized structure that CARR offers.
 
 The CARR architecture offers an alternative perspective for organizing Linux systems, with an emphasis on modularity and isolation. By utilizing clear compartmentalization principles, this architecture could address some current challenges and open new opportunities for the evolution of the Linux ecosystem.
 By presenting this vision, we invite the Linux community to explore CARR concepts and evaluate potential benefits in the context of current and future needs of users and developers.
