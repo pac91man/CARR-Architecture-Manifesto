@@ -1,7 +1,7 @@
 The CARR Architecture Manifest
 Compartmentalized Architecture for Resources and Repositories
 
-Copyright (c) 2025 Munteanu Vasile-Alexandru.
+Copyright (c) 2025 Vasile-Alexandru Munteanu.
 This Manifest is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0).
 To view a copy of this license, visit: https://creativecommons.org/licenses/by/4.0/
 
