@@ -167,7 +167,8 @@ Etapa de Adoptare Nativă:
     Dezvoltarea de instrumente și biblioteci optimizate specific pentru această arhitectură.
     Rescrierea componentelor critice pentru a exploata pe deplin avantajele structurii compartimentate.
 
-Similar analogiei dintre roțile vechilor căruțe și roțile moderne ale mașinilor, aplicațiile rulate în modul de compatibilitate nu vor exploata pe deplin beneficiile CARR. Totuși, odată rescrise pentru arhitectura nativă, aplicațiile vor putea valorifica toate avantajele structurii moderne și optimizate pe care o oferă CARR.
+Similar analogiei dintre roțile vechilor căruțe și roțile moderne ale mașinilor – **așa cum roțile căruțelor din 1800 pot fi adaptate la automobilele din prezent, dar vor limita viteza și performanța mașinilor** – aplicațiile rulate în modul de compatibilitate nu vor exploata pe deplin beneficiile CARR.
+Totuși, odată rescrise pentru arhitectura nativă, aplicațiile vor putea valorifica toate avantajele structurii moderne și optimizate pe care o oferă CARR.
 
 🎯 Concluzie
 
