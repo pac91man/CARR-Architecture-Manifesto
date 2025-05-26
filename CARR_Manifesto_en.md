@@ -181,6 +181,8 @@ Native Adoption Stage:
     Development of tools and libraries specifically optimized for this architecture
     Rewriting critical components to fully exploit the advantages of the compartmentalized structure
 
+# Conclusion
+
 Similar to the analogy of old cartwheels versus modern car wheels – **just as 19th-century cartwheels can be adapted to present-day automobiles but will limit the cars' speed and performance** – applications running in compatibility mode will not fully exploit CARR's benefits.
 However, once rewritten for the native architecture, applications will be able to leverage all the advantages of the modern and optimized structure that CARR offers.
 
